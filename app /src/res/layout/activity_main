@@ -1,1 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        app:menu="@menu/bootom_navigation"
+        tools:ignore="MissingClass">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@color/top_bg"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online Education"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn More Grow More !"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/maths_bg"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maths"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Math is the music of reason."
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/mathematics"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/physics_bg"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physics"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+                  <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In science there is only physics ! "
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/gravity"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/chemistry_bg"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry is real."
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/chemical"
+                    android:layout_marginLeft="120dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/biology_bg"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biology"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biology is the study of life ."
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/bacteria"
+                    android:layout_marginLeft="60dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/geography_bg"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Geography"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="It's about the Story of World."
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/geography"
+                    android:layout_marginLeft="55dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/computer_bg"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Computer"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The computer is a product of the human mind."
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="8dp"
+                    android:src="@drawable/computer"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
