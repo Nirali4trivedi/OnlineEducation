@@ -1,2 +1,2 @@
 # OnlineEducation
-Latst design for Online Education Application
+Latest design for Online Education Application
